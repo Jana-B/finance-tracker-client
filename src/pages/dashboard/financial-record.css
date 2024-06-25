@@ -1,0 +1,161 @@
+/* Centered container for the app */
+.dashboard-container {
+    width: 80%;
+  }
+  
+  /* General styling for headers within the app */
+  h1,
+  h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 4px 2px 6px #2c3e50;
+  }
+  
+  /* Form and list container */
+  .form-container,
+  .list-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Common class for all buttons */
+  .button {
+    background-color: rgba(51, 71, 92, 0.85);
+    color: #ffffff;
+    border: 2px solid #2c3e50;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .add-button:hover {
+    background-color: rgba(48, 80, 122, 0.8);
+    border: 2px solid white;
+ 
+  }
+  .button-delete {
+    background-color: rgba(51, 71, 92, 0.85);
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button-delete:hover {
+    background-color: rgba(249, 52, 134, 0.518);
+    border: 2px solid white;
+  }
+  
+  /* Common class for all input fields and selects */
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /* background-color: transparent; */
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    box-sizing: border-box;
+  }
+  
+  /* Labels for better readability */
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-shadow: 4px 2px 6px black;
+  }
+  
+  .table-container {
+    margin: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling if the table is too wide */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+    /* border: 1px solid #ddd; Light grey border for cells */
+    text-align: left;
+    max-width: 200px;
+    overflow: hidden;
+  }
+  
+  .table th {
+    background-color: #2c3e50;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.8); /* Zebra striping for rows, light grey */
+  }
+
+  .table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #2c3e5039; 
+  }
+
+/* ROUNDED CORNERS FOR TABLE */  
+  .table thead th:first-child {
+    border-top-left-radius: 8px;
+  }
+  
+  .table thead th:last-child {
+    border-top-right-radius: 8px;
+  }
+
+  .table tbody tr:last-child {
+    border-radius: 10px;
+  }
+
+
+  /* MAX WIDTH & HANDLE OVERFLOW*/
+/* .description-cell {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+} */
+
+/* STYLE TOOLTIP*/
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    text-shadow: none;
+    transform: translateY(10%);
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 6px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+ 
